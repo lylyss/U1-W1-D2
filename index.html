@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Epicode</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <style>
+      .logo {
+        padding: 20px;
+      }
+      .menu {
+        background-color: #6e0972;
+        overflow: hidden;
+        display: flex;
+        padding: 10px;
+      }
+
+      .menu a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+        text-align: center;
+        transition: 0.3s;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
+      .menu a:hover {
+        background-color: #1f0633;
+      }
+      aside {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .newsletter-form {
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .newsletter-form h2 {
+        color: #333;
+      }
+
+      .newsletter-form input {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .newsletter-form button {
+        background: #200a5c;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+      }
+      aside,
+      main {
+        width: 50%;
+        display: inline-block;
+      }
+      .contenitore {
+        display: flex;
+        height: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="asset/logo.svg" alt="Logo epicode school" width="300" />
+      </div>
+    </header>
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="#">Articoli</a>
+      <a href="#">Lavora con noi</a>
+    </nav>
+
+    <div class="contenitore">
+      <main>
+        <div>
+          <h1>Come Creare un Template per i post</h1>
+          <h4>Di Mario Rossi - publicato il 25-10-2020</h4>
+        </div>
+        <section>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus deserunt velit at labore perspiciatis asperiores minima ex perferendis? Officia
+          cumque consectetur quia error sunt odit fugiat in aliquid accusamus ea!
+        </section>
+        <section>
+          <table>
+            <tr>
+              <th>Anno</th>
+              <th>% di utilizzo</th>
+              <th>Suppo browsers</th>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>20 %</td>
+              <td>10 %</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td>35 %</td>
+              <td>22 %</td>
+            </tr>
+            <tr>
+              <td>2004</td>
+              <td>45 %</td>
+              <td>42 %</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>80 %</td>
+              <td>51 %</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>100 %</td>
+              <td>76 %</td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          Un test di validazione potra essere fatto tramite il tool online
+          <a
+            href="https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-strumenti.come-acquisire-la-dsu-precompilata-e-richiedere-l-isee-53358.come-acquisire-la-dsu-precompilata-e-richiedere-l-isee.html"
+            >LINK ESTERNO</a
+          >
+          dedicato allo scopo. Una vota ottimizato il tutto, avremo ragiunto il nostro obiettivo ed essere stati dei veri developers come loro:
+          <div>
+            <iframe
+              width="480"
+              height="280"
+              src="https://www.youtube.com/embed/aBSZVeBRvDY?si=1fENXlMLf7GRajhz"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+      </main>
+
+      <aside>
+        <h3>Articoli corelati</h3>
+        <div>
+          <h4>Validare il codice HTML</h4>
+          <p>Categoria: develop</p>
+          <p>Data: 18-9-2020</p>
+        </div>
+        <div>
+          <h4>Corregere la sitassi</h4>
+          <p>Categoria: develop</p>
+          <p>Data 16-9-2020</p>
+        </div>
+        <div>
+          <h4>Meno Kb nella pagina</h4>
+          <p>Categoria: ottimizzazione</p>
+          <p>Data: 30-9-2020</p>
+        </div>
+      </aside>
+    </div>
+    <div>
+      <p>Voi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+    </div>
+    <div class="newsletter-form">
+      <h2>Iscriviti alla Newsletter</h2>
+
+      <form action="#" method="post">
+        <input type="email" name="email" placeholder="Inserisci la tua email" required />
+        <button type="submit">Iscriviti</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>Blog Epicode 2023</p>
+      <p>Testata Online di Morio Rossi, registrata con prot. n.213/2018 - Via Luigi 2- Milano</p>
+    </footer>
+  </body>
+</html>
