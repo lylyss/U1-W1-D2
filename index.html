@@ -9,9 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     <style>
-      .logo {
-        padding: 20px;
+      p,
+      .titolopost,
+      body {
+        margin: 0;
       }
+      .logo {
+        padding-top: 10px;
+        padding-left: 20px;
+        background: linear-gradient(to bottom, rgb(101, 5, 190), #6e0972);
+      }
+
       .menu {
         background-color: #6e0972;
         overflow: hidden;
@@ -22,42 +30,72 @@
       .menu a {
         color: white;
         text-decoration: none;
-        padding: 14px 20px;
+        padding: 14px 10px;
         text-align: center;
-        transition: 0.3s;
+        transition: 0.2s;
         font-family: "Roboto", sans-serif;
         font-size: 20px;
         font-weight: 500;
         color: #ffffff;
-        text-transform: uppercase;
-        letter-spacing: 3px;
+        text-transform: unset;
+        letter-spacing: 1px;
       }
 
       .menu a:hover {
-        background-color: #1f0633;
+        background: linear-gradient(to left, #6e0972, rgb(69, 11, 107), #6e0972);
       }
       aside {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        display: flex;
+        font-family: "Roboto", sans-serif;
+        background: linear-gradient(to left, #f1b6e8, #a84df1);
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 50vh;
+      }
+      aside {
+        margin: 0;
+        width: 100%;
+      }
+      .articoliaside {
+        padding: 20px;
+      }
+
+      .iframecont {
+        padding-right: 20%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        width: fit-content;
+        display: flex;
+      }
+      .videoframe1 {
+        margin: 30px;
+        overflow: hidden;
+        display: flex;
+        padding: 10px;
+        box-shadow: 0px 0px 1px 20px rgba(0, 0, 0, 0.1);
+      }
+      .videoframe2 {
+        margin: 30px;
+        overflow: hidden;
+        display: flex;
+        padding: 10px;
+        box-shadow: 0px 0px 1px 20px rgba(0, 0, 0, 0.1);
       }
 
       .newsletter-form {
-        background: white;
+        background: linear-gradient(to left, rgb(122, 14, 194), #c483e2, rgb(122, 14, 194));
         padding: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         text-align: center;
       }
 
       .newsletter-form h2 {
+        font-family: "Roboto", sans-serif;
         color: #333;
       }
 
       .newsletter-form input {
-        width: 80%;
+        font-family: "Roboto", sans-serif;
+        width: 50%;
         padding: 10px;
         margin: 10px 0;
         border: 1px solid #ccc;
@@ -65,20 +103,28 @@
       }
 
       .newsletter-form button {
-        background: #200a5c;
+        font-family: "Roboto", sans-serif;
+        background: #6e0972;
         color: white;
         padding: 10px 15px;
         border: none;
-        border-radius: 5px;
-      }
-      aside,
-      main {
-        width: 50%;
-        display: inline-block;
+        border-radius: 15px;
       }
       .contenitore {
-        display: flex;
-        height: 40%;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(to top, #480268, #964d87, #c483e2);
+      }
+      .idtable {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        padding: 10px 100px;
+      }
+      .footer {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        background: linear-gradient(to left, rgb(122, 14, 194), #c483e2, rgb(122, 14, 194));
       }
     </style>
   </head>
@@ -94,21 +140,24 @@
       <a href="#">Lavora con noi</a>
     </nav>
 
-    <div class="contenitore">
-      <main>
+    <div>
+      <main class="contenitore">
         <div>
-          <h1>Come Creare un Template per i post</h1>
+          <h1 class="titolopost">Come Creare un Template per i post</h1>
           <h4>Di Mario Rossi - publicato il 25-10-2020</h4>
         </div>
         <section>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus deserunt velit at labore perspiciatis asperiores minima ex perferendis? Officia
-          cumque consectetur quia error sunt odit fugiat in aliquid accusamus ea!
+          cumque consectetur quia error Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus deserunt velit at labore perspiciatis asperiores minima
+          ex perferendis? Officia cumque consectetur quia error sunt odit fugiat in aliquid accusamus ea!sunt odit fugiat in aliquid accusamus ea! ipsum dolor
+          sit amet consectetur adipisicing elit. Ducimus deserunt velit at labore perspiciatis asperiores minima ex perferendis? Officia cumque consectetur quia
+          error sunt odit fugiat in aliquid accusamus ea!
         </section>
-        <section>
+        <section class="idtable">
           <table>
             <tr>
               <th>Anno</th>
-              <th>% di utilizzo</th>
+              <th>%di utilizzo</th>
               <th>Suppo browsers</th>
             </tr>
             <tr>
@@ -139,17 +188,29 @@
           </table>
         </section>
         <section>
-          Un test di validazione potra essere fatto tramite il tool online
+          Un test di validazione potra essere fatto tramite il
           <a
             href="https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-strumenti.come-acquisire-la-dsu-precompilata-e-richiedere-l-isee-53358.come-acquisire-la-dsu-precompilata-e-richiedere-l-isee.html"
-            >LINK ESTERNO</a
+            >Tool Online</a
           >
           dedicato allo scopo. Una vota ottimizato il tutto, avremo ragiunto il nostro obiettivo ed essere stati dei veri developers come loro:
-          <div>
+          <div class="iframecont">
             <iframe
-              width="480"
-              height="280"
+              class="videoframe1"
+              width="560"
+              height="315"
               src="https://www.youtube.com/embed/aBSZVeBRvDY?si=1fENXlMLf7GRajhz"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              class="videoframe2"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/4Tr0otuiQuU?si=RocEe16xX95Vt3qg"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -161,26 +222,28 @@
       </main>
 
       <aside>
-        <h3>Articoli corelati</h3>
-        <div>
-          <h4>Validare il codice HTML</h4>
-          <p>Categoria: develop</p>
-          <p>Data: 18-9-2020</p>
-        </div>
-        <div>
-          <h4>Corregere la sitassi</h4>
-          <p>Categoria: develop</p>
-          <p>Data 16-9-2020</p>
-        </div>
-        <div>
-          <h4>Meno Kb nella pagina</h4>
-          <p>Categoria: ottimizzazione</p>
-          <p>Data: 30-9-2020</p>
+        <div class="articoliaside">
+          <h1 class="titolopost">Articoli corelati</h1>
+          <div>
+            <h4>Validare il codice HTML</h4>
+            <p>Categoria: develop</p>
+            <p>Data: 18-9-2020</p>
+          </div>
+          <div>
+            <h4>Corregere la sitassi</h4>
+            <p>Categoria: develop</p>
+            <p>Data 16-9-2020</p>
+          </div>
+          <div>
+            <h4>Meno Kb nella pagina</h4>
+            <p>Categoria: ottimizzazione</p>
+            <p>Data: 30-9-2020</p>
+          </div>
         </div>
       </aside>
     </div>
-    <div>
-      <p>Voi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+    <div class="footer">
+      <p>Voi rimanere aggiornato su altre novità del blog?</p>
     </div>
     <div class="newsletter-form">
       <h2>Iscriviti alla Newsletter</h2>
@@ -191,8 +254,8 @@
       </form>
     </div>
 
-    <footer>
-      <p>Blog Epicode 2023</p>
+    <footer class="footer">
+      <p>Blog Epicode &copy;2025</p>
       <p>Testata Online di Morio Rossi, registrata con prot. n.213/2018 - Via Luigi 2- Milano</p>
     </footer>
   </body>
